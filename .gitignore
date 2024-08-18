@@ -26,3 +26,5 @@ yarn-error.log*
 /.firebaserc
 /firebase.json
 /src/Utils/firebase.js
+
+/notes.md

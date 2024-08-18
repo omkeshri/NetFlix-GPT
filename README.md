@@ -1,3 +1,3 @@
 # NetFlix-GPT
 
-__Working__
+__Working__  https://netflix-gpt-omkeshari.web.app/

@@ -105,7 +105,7 @@ const Login = () => {
   return (
     <div className="">
       <Header />
-      <div className="absolute ">
+      <div className="absolute w-full">
         <img
           src={BACKGROUND}
           alt="Background"

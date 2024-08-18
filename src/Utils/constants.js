@@ -6,3 +6,11 @@ export const BACKGROUND =
 
 export const AVATAR =
   "https://occ-0-6503-3647.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABXz4LMjJFidX8MxhZ6qro8PBTjmHbxlaLAbk45W1DXbKsAIOwyHQPiMAuUnF1G24CLi7InJHK4Ge4jkXul1xIW49Dr5S7fc.png?r=e6e";
+
+export const API_OPTIONS = {
+    method: 'GET',
+    headers: {
+      accept: 'application/json',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMGIwMmU2NDQyMjNmZjM0YWUwMTM0YTE4NTVhYjQ5NyIsIm5iZiI6MTcyMzkyODYyMy44MDM2ODMsInN1YiI6IjY2YzEwODQ0NjU4NGJhOGE3YTJlNmJkNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Cbf_qajAJeEf2ua3xekI_uqZEvM7PbcaZwkbr2AXLCQ'
+    }
+  };

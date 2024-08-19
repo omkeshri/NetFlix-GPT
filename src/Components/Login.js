@@ -33,6 +33,7 @@ const Login = () => {
     //         checkSignInData(email.current.value, password.current.value)
     //       );
     // }
+
     const message = checkSignInData(
       // name.current.value,
       email.current.value,
@@ -52,8 +53,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(auth.currentUser, {
             displayName: name.current.value,
-            photoURL:
-              AVATAR,
+            photoURL: AVATAR,
           })
             .then(() => {
               // Profile updated!
@@ -109,12 +109,14 @@ const Login = () => {
         <img
           src={BACKGROUND}
           alt="Background"
+          className="h-[775px] w-full"
         ></img>
+        <div className="absolute inset-0 bg-gradient-to-b from-black opacity-65"></div>
       </div>
 
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="absolute my-36 w-3/12 right-0 left-0 mx-auto bg-[rgba(0,0,0,0.7)] p-14"
+        className="absolute my-36 w-[27%] h-[70%] right-0 left-0 mx-auto bg-[rgba(0,0,0,0.7)] p-14"
       >
         <h1 className="font-bold text-white text-3xl mb-6">
           {isSignInForm ? "Sign In" : "Sign Up"}
@@ -131,17 +133,17 @@ const Login = () => {
           ref={email}
           type="text"
           placeholder="Email or mobile number"
-          className="p-3 mb-4 w-full text-white bg-[#272728] border border-[rgb(255, 255, 255)] rounded-sm"
+          className="p-3 mb-6 w-full text-white bg-[#272728] border border-[rgb(255, 255, 255)] rounded-sm"
         />
         <input
           ref={password}
           type="password"
           placeholder="Password"
-          className="p-3 mb-2 w-full text-white  bg-[#272728] border border-[rgb(255, 255, 255)] rounded-sm"
+          className="p-3 mb-6 w-full text-white  bg-[#272728] border border-[rgb(255, 255, 255)] rounded-sm"
         />
         <p className=" text-[#E50914]">{errorMessage}</p>
         <button
-          className="p-2 mt-2 text-white w-full bg-[#E50914] rounded-sm"
+          className="p-2 mt-2 text-white w-full bg-[#E50914] rounded-sm hover:bg-opacity-80"
           onClick={handleButtonClick}
         >
           {isSignInForm ? "Sign In" : "Sign Up"}

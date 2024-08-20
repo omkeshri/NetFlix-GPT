@@ -28,3 +28,4 @@ yarn-error.log*
 /src/Utils/firebase.js
 
 /notes.md
+/src/Utils/constants.js
